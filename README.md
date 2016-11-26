@@ -1,15 +1,17 @@
 # annotate-decisions
-A front interface to quickly annotate parts of a text by selecting them.
+This webpage allow you to manually identify key data on a text. The selected area are stored in a json format that can be stored in a database.
 
-In a given text you want to find key data, but you cannot automatise this findind : it needs to be done by a human. This interface allows the user to tell the system what are the key data of the text. It is done with an interface where you select parts of the text, and tell what they correspond to.
+In the source code the included text is a legal decision, and the user can tell who are the lawyer, the law and the party of this decision.
 
-Here the text is a legal decision, and the user has to find who are the lawyer, the law and the party of this decision.
+## Techonlogy ##
+
+Done in JavaScript with the framework [Vue.js](https://vuejs.org/)
 
 # How to use it #
 
 ## Change the text ##
 
-The text is harcoded in script.js.
+The text is hardcoded in script.js.
 
 ## Add annotations ##
 
@@ -32,4 +34,4 @@ Paste your json in the textarea, and click on Import. The current annotations ar
 
 # Notes #
 
-This project was created in [LION](http://joinlion.co/), a training of [The Family](https://www.thefamily.co/) to help [Doctrine](https://www.doctrine.fr/).
+This project was created during 2016 Winter Session of [LION](http://joinlion.co/) from [The Family](https://www.thefamily.co/) to help the startup [Doctrine](https://www.doctrine.fr/).
