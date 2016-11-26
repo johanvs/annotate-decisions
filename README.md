@@ -1,9 +1,9 @@
 # annotate-decisions
-This webpage allow you to manually identify key data on a text. The selected area are stored in a json format that can be stored in a database.
+This webpage allows you to manually identify key data on a text. The selected area are stored in a json format that can be stored in a database.
 
 In the source code the included text is a legal decision, and the user can tell who are the lawyer, the law and the party of this decision.
 
-## Techonlogy ##
+## Technology ##
 
 Done in JavaScript with the framework [Vue.js](https://vuejs.org/)
 
