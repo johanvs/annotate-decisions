@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+    <script src="script.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div id="text">
+        <span v-for="word in words" :class="word.class" :id="word.id" :annotation="word.annotation" :type="word.type" v-on:click="removeAnnotation">{{ word.word }}</span>
+    </div>
+
+    <div id="actions">
+        <button v-for="typeAnnotation in typeAnnotations" class="annotation" :type="typeAnnotation.type" v-on:click="annotate">{{ typeAnnotation.name }}</button>
+        <br/>
+        <button v-on:click="clearAnnotations">Clear</button>
+        <br/>
+        <button v-on:click="exportAnnotations">Export</button>
+        <div>Json exported :</div>
+        <div id="jsonExported">{{ jsonExported }}</div>
+        </table>
+        <label for="jsonToImport">Json to import :</label>
+        <textarea id="jsonToImport" rows="5" style="width:100%" v-model="jsonToImport"></textarea>
+        <button v-on:click="importAnnotations">Import</button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,16 @@
+.annotated{
+    cursor: url(http://cur.cursors-4u.net/others/oth-3/oth226.cur), progress !important;
+}
+[type="1"]{
+    background-color: lightgreen;
+}
+[type="2"]{
+    background-color: paleturquoise;
+}
+[type="3"]{
+    background-color: pink;
+}
+#jsonExported{
+    border: 1px solid darkgrey;
+    padding: 5px;
+}
